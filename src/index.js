@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import routes from './routes';
-import { Router } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { Provider } from 'react-redux';
 import { history } from './history.js'
 import store from './store/store'
@@ -14,9 +14,9 @@ import store from './store/store'
 ReactDOM.render(
   <React.StrictMode>
     <Provider {...{ store }}>
-      <Router {...{ history }}>
+      <HashRouter {...{ history }}>
         {routes}
-      </Router>
+      </HashRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
