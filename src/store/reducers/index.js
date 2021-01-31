@@ -3,7 +3,8 @@ import { groups } from '../../mocks/groups';
 
 
 const getInitialGroups = (groups) => {
-  const existingGroups = localStorage.getItem("allGroups") || {};
+  const existingGroups = localStorage.getItem("allGroups");
+  if (!existingGroups) return groups;
   const parsedGroups = JSON.parse(existingGroups);
 
   parsedGroups.forEach((parsedGroups) => {

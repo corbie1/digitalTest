@@ -1,11 +1,8 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, {   useCallback, useRef } from 'react';
 import { ActionCreator } from "../../store/actions"
-import { useSelector, useDispatch } from 'react-redux';
-import { useHistory } from "react-router-dom";
-import { history } from '../../history.js'
+import {  useDispatch } from 'react-redux';
 import Popup from './popup'
 import styled from 'styled-components';
-import store from '../../store/store'
 
 export const AddLink = () => {
 

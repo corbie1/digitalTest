@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { filterLinksSelector, groupListSelector } from '../../store/selectors'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { filterLinksSelector } from '../../store/selectors'
 import { NavLinks } from '../navPanel/groupsNav'
 import { Groups } from '../groupsInfo/sortedGroups'
 import { AddLink } from '../popup/popupAddLink'

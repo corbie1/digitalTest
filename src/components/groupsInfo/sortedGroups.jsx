@@ -1,11 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { ActionCreator } from "../../store/actions"
-import { useSelector, useDispatch } from 'react-redux';
-import { history } from '../../history.js'
+import React from 'react';
 import { useParams } from "react-router-dom";
-import { groupListSelector } from '../../store/selectors'
 import { AllGroups } from './allGroups'
-import { groups } from '../../mocks/groups';
 
 export const Groups = (props) => {
     let { id } = useParams();
