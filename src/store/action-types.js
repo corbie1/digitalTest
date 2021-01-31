@@ -1,0 +1,7 @@
+/* eslint-disable */
+export const ActionType = {
+  FETCH_INITIAL_DATA: 'FETCH_INITIAL_DATA',
+  SET_GROUP_LIST: 'SET_GROUP_LIST',
+  ADD_LINK: 'ADD_LINK',
+  FILTER_LINKS: 'FILTER_LINKS'
+}
